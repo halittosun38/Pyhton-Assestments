@@ -5,6 +5,6 @@ root.title("Assestment App")
 root.geometry("720x1280")
 label1=Label(root,text="Test")
 entry1 = Entry(root)
-entry1.pack
+entry1.pack()
 
 root.mainloop()
