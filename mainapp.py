@@ -1,5 +1,6 @@
 from tkinter import *
 from tkmacosx import *
+from tkinter import messagebox
 root = Tk()
 root.title("Assestment App")
 root.geometry("720x1280")
@@ -15,6 +16,9 @@ def adddata(data):
 
 def createpopup():
     root.attributes('-alpha',0.6)
+    pop = Toplevel(root)
+    pop.config(bg="white", highlightbackground="#000000", highlightthickness=2)
+    
     
 button1 = Button(root,command=createpopup,text="Button For blur")
 button1.pack(padx=20, pady=20)
