@@ -20,10 +20,14 @@ def createpopup1():
     pop = Toplevel(root)
     pop.geometry("300x200")
     pop.config(bg="white", highlightbackground="#000000", highlightthickness=2)
+    label2=Label(pop,text="Test")
+    label2.pack()
+    entry2 = Entry(pop)
+    entry2.pack()
     def closepopup1():
         root.attributes('-alpha',1)
         pop.destroy()
-    button2 = Button(pop,command=closepopup1,text="sss")
+    button2 = Button(pop,command=adddata(entry2.get()),text="sss")
     button2.pack()
 
     
