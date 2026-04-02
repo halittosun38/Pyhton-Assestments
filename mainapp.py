@@ -38,7 +38,7 @@ def createpopup1():
     pop = Toplevel(root)
     pop.geometry("300x200")
     pop.config(bg="white", highlightbackground="#000000", highlightthickness=2)
-
+    pop.grab_set()
     label2 = Label(pop, text="Student No")
     label2.pack()
 
