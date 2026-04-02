@@ -27,7 +27,7 @@ def adddata(data):
         messagebox.showerror("Error", "Student number already exists!")
         return False
     else:
-        with open("data.txt", "a") as file:  # append yaptık!
+        with open("data.txt", "a") as file: 
             file.write(str(data) + "|")
         return True
 
@@ -37,9 +37,13 @@ def createpopup1():
 
     pop = Toplevel(root)
     pop.geometry("300x200")
-    pop.config(bg="white", highlightbackground="#000000", highlightthickness=2)
+    pop.config(bg="#444444", highlightbackground="#FFFFFF", highlightthickness=2)
     pop.grab_set()
-    label2 = Label(pop, text="Student No")
+    label3 = Label(pop,text="Add New Student",background="#444444")
+    label3.pack()
+    label4 = Label(pop,text="",background="#444444",font="Arrial")
+    label4.pack()
+    label2 = Label(pop, text="Student No",background="#444444")
     label2.pack()
 
     entry2 = Entry(pop)
