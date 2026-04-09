@@ -1,4 +1,79 @@
-Readme Test
+Student Progress Tracker
 
-resource 1. https://www.geeksforgeeks.org/python/python-tkinter-toplevel-widget/
-resource 2.https://stackoverflow.com/questions/13865009/have-multiple-commands-when-button-is-pressed
+GitHub Repository URL: https://github.com/halittosun38/Pyhton-Assestments/tree/main
+
+Identification:
+- Name: Halid
+- P-number: p501643
+- Course code: IY499
+
+Declaration of Own Work:
+I confirm that this assignment is my own work.
+Where I have referred to academic sources, I have provided proper in-text citations and included the sources in the final reference list.
+
+Introduction:
+This project is a student progress tracker app whic is using the tkinter in python
+
+Features:
+Add-delete-manage student data
+you can add multiple subject for each student
+this system calculate student and school averages
+this system has sorting system and filtrenig (search ) system
+this system has motplotlib it is create pie chart and graph
+
+Installation:
+To run the app locally:
+1. Make sure Python 3.x is installed.
+2. Install required dependencies:
+   pip install matplotlib
+
+How to Run the App:
+1. Open terminal/command prompt in the project folder.
+2. Run the main script:
+   python main.py
+
+App Elements:
+- Element 1: Main screen navigate interface with buttons for all features
+- Element 2: pop up screen used for input (adding students,grafes,attandence)
+- Element 3: student table display all student with Id -average grade - attendance - subject
+
+Libraries Used:
+- [Tkinter] – For creating screen 
+- [Json] – for data
+- [Matplotlib] – for data visualization
+
+
+Project Structure:
+ProjectFolder/
+├── students.json            # Stores student data
+├── main.py              # Main application logic and GUI implementation
+├── README.md            # Project documentation
+
+Testing:
+Include test scenarios covering:
+Valid Cases:
+- Adding a new student with a valid ID
+- Entering grades between 0–100
+- Setting attendance between 0–100
+- Viewing charts with existing data
+Invalid Cases:
+- Entering empty student ID
+- Using non-alphanumeric student IDs
+- Entering non-numeric grades or attendance
+- Accessing non-existing students
+Example Scenarios:
+- Adding a student twice shows an error
+- Invalid input does not crash the program
+- Charts do not open if no data exists
+- Table updates dynamically with search and sort
+
+References:
+- Python Tkinter Documentation: https://docs.python.org/3/library/tkinter.html
+- Python JSON Documentation: https://docs.python.org/3/library/json.html
+- Matplotlib Documentation: https://matplotlib.org/stable/tutorials/introductory/pyplot.html
+- Stack Overflow (JSON file handling): https://stackoverflow.com/questions/20199126/reading-json-from-a-file
+- Stack Overflow (Tkinter Treeview + Scrollbar): https://stackoverflow.com/questions/22432814/ttk-treeview-with-scrollbar
+- Python Sorting HOWTO: https://docs.python.org/3/howto/sorting.html
+- Python Data Structures (List Comprehension): https://docs.python.org/3/tutorial/datastructures.html
+- Tkinter BooleanVar Guide: https://www.pythontutorial.net/tkinter/tkinter-booleanvar/
+- Matplotlib Bar Chart Reference: https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.bar.html
