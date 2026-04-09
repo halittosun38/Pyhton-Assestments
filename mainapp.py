@@ -25,22 +25,22 @@ root.resizable(False, False)
 
 #######################  Json Read-Write #####################################
 def load_datajsonss():
-    ## this code reads the data.json file and returns it as a Python dictionary.
+    ## this code reads the students.json file and returns it as a Python dictionary.
     ### FileNotFound = if data file did't created it gives error
     ###  JsonDecodeError = If the file is corrupted, warns the user and returns an empty dictionary
     try:
-        with open("data.json", "r") as file:
+        with open("students.json", "r") as file:
             return json.load(file)       
     except FileNotFoundError:
         return {}                         
     except json.JSONDecodeError:
-        messagebox.showerror("Error", "data.json is corrupted. Starting fresh.")
+        messagebox.showerror("Error", "students.json is corrupted. Starting fresh.")
         return {}
 
 
 def save_data(data):
-   ##Writes the Python dictionary to the data.json file.
-    with open("data.json", "w") as file:
+   ##Writes the Python dictionary to the students.json file.
+    with open("students.json", "w") as file:
         json.dump(data, file, indent=4)
 
 ## input checker
